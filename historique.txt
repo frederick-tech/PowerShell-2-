@@ -1,0 +1,44 @@
+
+  Id CommandLine                                                                                
+  -- -----------                                                                                
+                                                                                  
+  34 Set-Location -Path C:/                                                                     
+  35 New-Item -ItemType Directory -Path C:/ -Name FolderTest1                                   
+  36 New-Item -ItemType Directory -Path C:/ FolderTest2                                         
+  37 New-Item -ItemType Directory -Path C:/ /FolderTest2                                        
+  38 New-Item -ItemType Directory -Path C:\FolderTest2                                          
+  39 New-Item -ItemType File -Path C:\FolderTest1 -Name File1                                   
+  40 New-Item -ItemType File -Path C:\FolderTest1 -Name File2                                   
+  41 New-Item -ItemType File -Path C:\FolderTest1 -Name File2                                   
+  42 New-Item -ItemType File -Path C:\FolderTest1 -Name File3                                   
+  43 New-Item -ItemType File -Path C:\FolderTest1 -Name File4                                   
+  44 New-Item -ItemType File -Path C:\FolderTest1 -Name File5                                   
+  45 Remove .\FolderTest1 -Recurse                                                              
+  46 Remove-Item FolderTest1 -Recurse                                                           
+  47 ls                                                                                         
+  48 Remove-Item FolderTest2 -Recurse                                                           
+  49 ls                                                                                         
+  50 clear                                                                                      
+  51 Set-Location -Path C:\...                                                                  
+  52 New-Item -ItemType Directory EvenFolder                                                    
+  53 New-Item -ItemType Directory OddFolder                                                     
+  54 Get-Location .\FolderTest1                                                                 
+  55 Get-Location FolderTest1                                                                   
+  56 Get-Location C:\FolderTest1                                                                
+  57 Set-Location C:\FolderTest1                                                                
+  58 Move-Item File1 File3 File5 -Destination C:\OddFolder                                      
+  59 Move-Item File1 -Destination C:\OddFolder                                                  
+  60 Move-Item File3 -Destination C:\OddFolder                                                  
+  61 Move-Item File5 -Destination C:\OddFolder                                                  
+  62 Move-Item File2 -Destination C:\EvenFolder                                                 
+  63 Move-Item File4 -Destination C:\EvenFolder                                                 
+  64 Get-ChildItem                                                                              
+  65 Set-Location C:\FolderTest2                                                                
+  66 Get-ChildItem                                                                              
+  67 Move-Item File6 -Destination C:\EvenFolder                                                 
+  68 Move-Item File8 -Destination C:\EvenFolder                                                 
+  69 Move-Item File10 -Destination C:\EvenFolder                                                
+  70 Move-Item File7 -Destination C:\OddFolder                                                  
+  71 Move-Item File9 -Destination C:\OddFolder                                                  
+
+
